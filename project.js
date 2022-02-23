@@ -20,6 +20,9 @@ eventForum.addEventListener("submit",async (e) => {
   
   await fetch("https://safe-taiga-20513.herokuapp.com/project", requestOptions)
     .then((response) => response.text())
-    .then((result) => console.log(result))
+    .then((result) => {
+      console.log(result)
+      alert("your response has been submitted!")
+    })
     .catch((error) => console.log("error", error));
 });
