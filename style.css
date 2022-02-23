@@ -11,6 +11,40 @@ body {
   color: #384047;
 }
 
+.admin-redirect{
+    width: 500px;
+    height: 400px;
+    top: 50%;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    left: 50%;
+    position: absolute;
+    margin-top: -200px;
+    margin-left: -250px;
+   background-color: rgb(204, 240, 204);
+   align-items: center;
+   justify-content: center;
+
+}
+#wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+.admin-choice-button{
+    background-color: rgb(67, 139, 67);
+    color: white;
+    text-decoration: none;
+    margin: 2rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    border-radius: 4px;
+    
+}
 .button-style{
 background-color: black;
 border: none;
