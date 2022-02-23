@@ -1,6 +1,6 @@
 const inputFile = document.getElementById("file");
 
-var eventForum = document.getElementById("events-form");
+var eventForum = document.getElementById("project-form");
 eventForum.addEventListener("submit",async (e) => {
   e.preventDefault();
   var formdata = new FormData();
@@ -18,7 +18,7 @@ eventForum.addEventListener("submit",async (e) => {
     redirect: "follow",
   };
   
-  await fetch("https://safe-taiga-20513.herokuapp.com/event", requestOptions)
+  await fetch("https://safe-taiga-20513.herokuapp.com/project", requestOptions)
     .then((response) => response.text())
     .then((result) => console.log(result))
     .catch((error) => console.log("error", error));
